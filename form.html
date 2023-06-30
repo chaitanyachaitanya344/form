@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- <div>
+      <span>Hi</span>,<span>Hello</span>,<span>Hw are you?</span>
+    </div> -->
+    <form action="/pages.com" method="post">
+      <fieldset>
+        <legend>Details</legend>
+        <fieldset>
+          <!-- Readonly & Size -->
+          <label for="first"> FirstName </label>
+          <input type="text" id="fn" value="AA" readonly />
+        </fieldset>
+        <br />
+        <fieldset>
+          <label for="last"> LastName </label>
+          <input type="text" id="ln" required />
+        </fieldset>
+        <br />
+        <label for="phone"> Phone </label>
+        <input type="number" id="pn" maxlength="10" size="25" required />
+        <br />
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" required autofocus />
+        <br />
+        <label for="Dob">Date Of Birth </label>
+        <input type="datetime-local" id="dob" required />
+        <br />
+        <label for="Dob">DOB </label>
+        <input type="date" id="birth" min="2001 -01-01" max="2023-06-06" />
+        <br />
+        <label> Pick Your Fav Color</label>
+        <input type="color" id="color" required /><br />
+        <label> Select a File </label> <br />
+        <input type="file" multiple /><br />
+        <label for="bdaymonth">Birthday (month and year):</label><br />
+        <input type="month" name="bdaymonth" /><br />
+        <label for="points">Points:</label>
+        <input type="number" name="points" step="5" />
+        <!-- <input type="text" id="searching" name="search" placeholder="Search" /> -->
+        <label> Password</label> <br />
+        <input type="password" name="pw" /><br />
+        <input
+          type="image"
+          src="./images.jpeg"
+          alt="Submit"
+          width="48"
+          height="48"
+        />
+        <!-- <input type="submit" value="Submit" /> -->
+        <br />
+        <input type="reset" />
+        <br />
+      </fieldset>
